@@ -4,16 +4,29 @@ print("-------------------------------")
 # ----------------------------------------
 # insertion sort :
 
-arr = [8,5,3,1,3,8,4,9]
-for i in range(len(arr)):
-    j = i - 1
-    sel = arr[i]
-    while j >= 0 and arr[j+1] < arr[j]:
-        arr[j+1], arr[j] = arr[j], arr[j+1]
-        j -= 1
-    arr[j+1] = sel
+# arr = [8,5,3,1,3,8,4,9]
+# for i in range(len(arr)):
+#     j = i - 1
+#     sel = arr[i]
+#     while j >= 0 and arr[j+1] < arr[j]:
+#         arr[j+1], arr[j] = arr[j], arr[j+1]
+#         j -= 1
+#     arr[j+1] = sel
 
-print("Insertion sort : ",arr)
+# print("Insertion sort : ",arr)
+
+
+def insertion(arr):
+    for i in range(len(arr)):
+        cur = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > cur:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = cur
+    return arr
+arr = [8,5,3,1,3,8,4,9]
+print("Insertion sort : ",insertion(arr))
 
 # ----------------------------------------
 # # selection sort

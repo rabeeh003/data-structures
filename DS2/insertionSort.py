@@ -57,3 +57,13 @@ print(ISAoud(ar))
 print(ISEven(ar))
 
 
+def insertion(arr):
+    for i in range(len(arr)):
+        cu = arr[i]
+        j = i - 1
+        while j > 0 and cu < arr[j]:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = cu
+    return arr
+print(insertion(ar))

@@ -49,3 +49,20 @@ while kk:
     rev += kk.pop()
 print(st)
 print(rev)
+
+
+stack = []
+stack.append(12)
+stack.append(22)
+stack.append(32)
+stack.pop()
+print(stack)
+
+string = 'hello world'
+temp = []
+cs = ''
+for i in string:
+    temp.append(i)
+while temp:
+    cs += temp.pop()
+print(cs)

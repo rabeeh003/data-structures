@@ -25,3 +25,11 @@ print(que)
 # pooda.put(1234)
 # print(pooda.get())
 # print(pooda.get())
+
+
+qu = []
+qu.append(12)
+qu.append(22)
+qu.append(32)
+qu.pop(0)
+print(qu)
