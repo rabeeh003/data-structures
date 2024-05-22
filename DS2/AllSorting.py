@@ -226,6 +226,7 @@ def merge_sort(arr):
     la = merge_sort(l_arr)
     ra = merge_sort(r_arr)
     return merge(la,ra)
+
 def merge(left,right):
     res = []
     l,r = 0,0

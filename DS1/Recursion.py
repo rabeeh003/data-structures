@@ -4,7 +4,7 @@ def factorial(num):
     else:
         return num * factorial(num -1)
     
-print(factorial(10))
+print(factorial(5))
 
 def fibonacci(num):
     if num <= 1:
